@@ -69,7 +69,6 @@ conn.commit()
 print("Data stored in SQLite successfully.")
 
 # --- STEP 6: Visualize the data ---
-# Suggestion: Plot Top 10 songs by stream count
 top_10 = df.sort_values(by='Streams (billions)', ascending=False).head(10)
 
 plt.figure(figsize=(12, 6))

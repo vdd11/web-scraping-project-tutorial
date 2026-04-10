@@ -77,5 +77,6 @@ plt.xlabel('Streams (Billions)')
 plt.title('Top 10 Most Streamed Songs on Spotify')
 plt.gca().invert_yaxis()
 plt.show()
-
+plt.savefig("top_10_spotify_songs.png", dpi=300, bbox_inches='tight') 
+plt.close()
 conn.close()
